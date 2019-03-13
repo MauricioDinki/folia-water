@@ -51,6 +51,98 @@
     span
       margin-right 30px
 
+.homepage-fold-2
+  background-color white
+  margin-top 50px
+
+  &-container
+    width 85%
+    margin 0 auto
+    display flex
+    flex-direction row
+    flex-wrap wrap
+
+  &-title
+    color black
+    display flex
+    align-items center
+    flex-basis 100%
+    
+    &-line
+      width 50px
+      height 3px
+      border-radius 0.5px
+      background-color: #fcb133;
+      margin-right 20px
+    span
+      font-family: "Gotham";
+      font-size: 15px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 3.27;
+      letter-spacing: 0px;
+      color: #232323;
+
+  &-description
+    font-family: "Gotham";
+    font-size: remify(32);
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.27;
+    letter-spacing: 0px;
+    color: #232323;
+    flex-basis 50%
+    margin-top 20px
+    
+
+  &-reach
+    flex-basis 100%
+    
+    margin-top 30px
+    display flex
+    &-image
+      flex-basis 50%
+      
+      margin 0
+      img
+        width 100%
+        height 100%
+    &-description
+      flex-basis 50%
+      div
+        margin-left 50px
+        
+        font-family: Gotham;
+        font-size: remify(15);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.83;
+        letter-spacing: 0.5px;
+        color: #515151;
+        width 82%
+        margin-top 20px
+      a
+        background-color #fcb133
+        font-size remify(14)
+        width 244px
+        height 67px
+        color white
+        text-align center
+        box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.41);
+        margin-top 20px
+        display flex
+        align-items center
+        justify-content center
+        margin-left 50px
+
+        &:hover
+          background-color #df9a2e
+
+        span
+           margin-right 30px
 
 @media screen and (max-width: 992px) // Used for portrait tablets
   .homepage-fold-1 // 0.86 proportion
@@ -65,8 +157,8 @@
         margin-top 40px
 
 
-  @media screen and (max-width: 767px) // Used for landscape phones
-    .homepage-fold-1 // 0.60 proportion
+@media screen and (max-width: 767px) // Used for landscape phones
+  .homepage-fold-1 // 0.60 proportion
       &-title
         font-size remify(32)
       &-subtitle

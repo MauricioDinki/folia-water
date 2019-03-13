@@ -59,7 +59,7 @@ module.exports = {
     }
   },
   etc: {
-    domain: '',
+    domain: 'mauriciodinki.github.io/folia-water',
     projectName: 'Folia Water',
     formattedName: package
   }
