@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include 'seo/google.njk' %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% include 'seo/metatags.njk' %}
+    {% block extra_css %}{% endblock %}
+    <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Prueba - {% block title %}{% endblock %}</title>
+    {% include 'seo/facebook.njk' %}
+  </head>
+  <body>
+    <div id="page">
+      {% include 'partials/navbar.njk' %}
+      <main>
+        {% block content %}{% endblock %}
+      </main>
+    </div>
+    {% block js_libs_config %}
+    {% endblock %}
+    <script src="js/{{ projectFilesName }}.libs.js"></script>
+    {% block js_project_config %}
+    {% endblock %}
+    <script src="js/{{ projectFilesName }}.js"></script>
+    {% block js_inline %}
+    {% endblock %}
+  </body>
+</html>

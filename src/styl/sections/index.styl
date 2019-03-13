@@ -1,0 +1,91 @@
+.homepage-fold-1
+  background-image: url('../img/people-drinking-water-blue.jpg')
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height 100vh
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  font-weight 300
+  font-family "Gotham"
+
+  &-title
+    font-size: remify(60);
+    font-weight: normal;
+    line-height: 1.17;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #ffffff;
+    display block
+    box-sizing border-box
+    span
+      font-weight bold
+
+  &-subtitle
+    font-size: remify(23);
+    font-weight: normal;
+    line-height: 1.83;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    margin-top 20px
+
+  &-button
+    font-size remify(17)
+    background-color #fcb133
+    height 78px
+    width 284px
+    color white
+    text-align center
+    box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.41);
+    margin-top 20px
+    display flex
+    align-items center
+    justify-content center
+
+    &:hover
+      background-color #df9a2e
+
+    span
+      margin-right 30px
+
+
+@media screen and (max-width: 992px) // Used for portrait tablets
+  .homepage-fold-1 // 0.86 proportion
+      &-title
+        font-size remify(50)
+      &-subtitle
+        font-size remify(19.7)
+        margin-top 30px
+      &-button
+        width 244px
+        height 67px
+        margin-top 40px
+
+
+  @media screen and (max-width: 767px) // Used for landscape phones
+    .homepage-fold-1 // 0.60 proportion
+      &-title
+        font-size remify(32)
+      &-subtitle
+        font-size remify(12)
+        margin-top 20px
+      &-button
+        font-size remify(14)
+        width 195px
+        height 50px
+        margin-top 20px
+
+@media screen and (max-width: 576px) // Used for portrait phones
+  .homepage-fold-1 // 0.46 proportion
+    &-title
+      font-size remify(28)
+    &-subtitle
+      font-size remify(11)
+      margin-top 20px
+    &-button
+      width 210px
+      height 58px
+      margin-top 20px
