@@ -1,7 +1,0 @@
-bower_components/
-node_modules
-build/
-dist/
-.idea/
-.publish/
-_templates/
