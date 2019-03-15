@@ -171,6 +171,7 @@
     margin-top 60px
     span
       color white !important
+
   &-brands
     &-time
       width: 140px;
@@ -190,7 +191,7 @@
       img
         margin-left 45px
         @media screen and (max-width: 576px)
-          margin-left 20px
+          margin-left 0
     &-cnn
       width: 104px;
       height: 48px;
@@ -198,7 +199,9 @@
       img
         margin-left 45px
         @media screen and (max-width: 576px)
-          margin-left 20px
+          margin-left 0
+          height 48px
+          width: 104px
       //padding-left 50px
     &-cbs
       width: 159px;
@@ -209,6 +212,11 @@
     a
       figure
         margin 0
+        @media screen and (max-width: 576px)
+          width 90%
+        img
+          @media screen and (max-width: 576px)
+            width 100%
   &-owl-nav
     margin-left auto
     margin-top 50px
