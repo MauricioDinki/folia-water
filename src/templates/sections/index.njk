@@ -1,6 +1,14 @@
 {% extends "partials/base.njk" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}The world’s first water filter for pennies, not dollars{% endblock %}
+
+{% set meta_description = "With a simple and robust new technology, Folia Water can provide safe drinking water for billions at the cost of less than a penny a day. Folia filter papers eliminate bacteria, viruses, and other pathogens, making water safe to drink." %}
+{% set og_url = "" %}
+{% set og_title = "The world’s first water filter for pennies, not dollars | Folia Water" %}
+{% set og_description = "With a simple and robust new technology, Folia Water can provide safe drinking water for billions at the cost of less than a penny a day. Folia filter papers eliminate bacteria, viruses, and other pathogens, making water safe to drink." %}
+{% set og_img = "" %}
+{% set og_img_width = "" %}
+{% set og_img_height = "" %}
 
 {% block content %}
 
@@ -17,9 +25,9 @@
   </a>
 </section>
 <section class="homepage-fold-2">
-  <div class="homepage-fold-2-container">
-    <div class="homepage-fold-2-title">
-      <div class="homepage-fold-2-title-line"></div>
+  <div class="homepage-container">
+    <div class="homepage-title">
+      <div class="homepage-title-line"></div>
       <span>FOLIA WATER</span>
     </div>
     <div class="homepage-fold-2-description">
@@ -36,7 +44,7 @@
           This leads to disease, a high mortality rate, and reduced equitability in societies across the world.
           Folia Water provides the first cost-effective and high-quality solution
         </div>
-        <a href="#">
+        <a href="#" class="homepage-button">
           <span>ABOUT US</span> <img src="img/icons/bigger_than.png" alt="button icon">
         </a>
       </div>
@@ -44,28 +52,38 @@
   </div>
 </section>
 <section class="homepage-fold-3">
-  <div class="homepage-fold-3-container">
-    <div class="honepage-fold-3-left-column">
-      <div class="homepage-fold-3-title">
-        <div class="homepage-fold-3-title-line"></div>
+  <div class="homepage-container">
+    <div class="homepage-fold-3-left-column">
+      <div class="homepage-title homepage-fold-3-title">
+        <div class="homepage-title-line"></div>
         <span>EASY TO USE</span>
       </div>
-      <div class="homepage-fold-3-description">
-        The Folia Filters are simple and easy to use.
+      <div class="homepage-fold-3-subtitle">
+        How<br>it works
       </div>
+      <div class="homepage-fold-3-description">
+        The Folia Filters are simple <br> and easy to use.
+      </div>
+      <a href="#" class="homepage-button homepage-fold-3-button">
+        <span>CONTACT</span> <img src="img/icons/bigger_than.png" alt="button icon">
+      </a>
     </div>
     <div class="homepage-fold-3-right-column">
       <figure>
         <img src="img/folia-water-filter-1.jpg" alt="filter step 1">
+        <span>1</span>
       </figure>
       <figure>
         <img src="img/folia-water-filter-2.jpg" alt="filter step 2">
+        <span>2</span>
       </figure>
       <figure>
         <img src="img/folia-water-filter-3.jpg" alt="filter step 3">
+        <span>3</span>
       </figure>
       <figure>
         <img src="img/folia-water-filter-4.jpg" alt="filter step 4">
+        <span>4</span>
       </figure>
     </div>
   </div>
