@@ -54,6 +54,7 @@
 .homepage-fold-2
   background-color white
   margin-top 50px
+  padding-bottom 50px
 
   &-container
     width 85%
@@ -95,25 +96,20 @@
     color: #232323;
     flex-basis 50%
     margin-top 20px
-    
 
   &-reach
     flex-basis 100%
-    
     margin-top 30px
     display flex
     &-image
       flex-basis 50%
-      
       margin 0
       img
         width 100%
-        height 100%
+        height auto
     &-description
       flex-basis 50%
       div
-        margin-left 50px
-        
         font-family: Gotham;
         font-size: remify(15);
         font-weight: normal;
@@ -122,8 +118,8 @@
         line-height: 1.83;
         letter-spacing: 0.5px;
         color: #515151;
-        width 82%
-        margin-top 20px
+        width 67%
+        margin 15px 0 0 40px
       a
         background-color #fcb133
         font-size remify(14)
@@ -132,11 +128,10 @@
         color white
         text-align center
         box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.41);
-        margin-top 20px
         display flex
         align-items center
         justify-content center
-        margin-left 50px
+        margin 15px 0 0 40px
 
         &:hover
           background-color #df9a2e
@@ -156,6 +151,31 @@
         height 67px
         margin-top 40px
 
+  .homepage-fold-2
+    &-container
+      width 90%
+    &-description
+      flex-basis 64%
+      font-size: remify(27);
+    &-reach
+      margin-top 40px
+      flex-wrap wrap
+      justify-content center
+      &-image
+        flex-basis 50%
+      &-description
+        flex-basis 50%
+        div
+          margin 0 0 0 40px
+          width 80%
+          font-size: remify(12);
+        a
+          //width 205px
+          //height 55px
+          width: 183px;
+          height: 50px;
+          margin 15px 0 0 40px
+
 
 @media screen and (max-width: 767px) // Used for landscape phones
   .homepage-fold-1 // 0.60 proportion
@@ -170,6 +190,7 @@
         height 50px
         margin-top 20px
 
+
 @media screen and (max-width: 576px) // Used for portrait phones
   .homepage-fold-1 // 0.46 proportion
     &-title
@@ -181,3 +202,28 @@
       width 210px
       height 58px
       margin-top 20px
+
+  .homepage-fold-2
+    &-container
+      width 85%
+    &-description
+      flex-basis 100%
+      font-size: remify(27);
+    &-reach
+      margin-top 25px
+      flex-wrap wrap
+      justify-content center
+      &-image
+        flex-basis 100%
+      &-description
+        flex-basis 100%
+        div
+          margin 0 0 0 0
+          width 80%
+          font-size: remify(15);
+          margin-top 15px
+          text-align left
+        a
+          width: 197px;
+          height: 51px;
+          margin: 15px 0 0 0;
