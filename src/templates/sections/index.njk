@@ -88,6 +88,80 @@
     </div>
   </div>
 </section>
+<section class="homepage-fold-4">
+  <div class="homepage-container homepage-fold-4-container">
+    <div class="homepage-title homepage-fold-4-title">
+      <div class="homepage-title-line"></div>
+      <span>AS SEEN ON</span>
+    </div>
+    <div class="homepage-fold-4-brands-container owl-carousel" id="brands-container">
+      <div class="homepage-fold-4-brand item">
+        <a href="http://time.com/4001048/drinkable-book/" target="_blank">
+          <figure class="homepage-fold-4-brands-time">
+            <img src="img/brands/time-logo.png" alt="time logo">
+          </figure>
+        </a>
+      </div>
+      <div class="homepage-fold-4-brand item">
+        <a href="http://video.chinadaily.com.cn/2016/0511/8260.shtml" target="_blank">
+          <figure class="homepage-fold-4-brands-china">
+            <img src="img/brands/china-daily-logo.png" alt="china daily logo">
+          </figure>
+        </a>
+      </div>
+      <div class="homepage-fold-4-brand item">
+        <a href="https://www.bbc.com/news/science-environment-33954763" target="_blank">
+          <figure class="homepage-fold-4-brands-bbc">
+            <img src="img/brands/bbc-logo.png" alt="bbc logo">
+          </figure>
+        </a>
+      </div>
+      <div class="homepage-fold-4-brand item">
+        <a href="https://edition.cnn.com/videos/tv/2016/04/12/exp-gps-0403-last-look-drinkable-book.cnn" target="_blank">
+          <figure class="homepage-fold-4-brands-cnn">
+            <img src="img/brands/cnn-logo.png" alt="cnn logo">
+          </figure>
+        </a>
+      </div>
+      <div class="homepage-fold-4-brand item">
+        <a href="https://www.youtube.com/watch?v=uBwRjSrKYSI" target="_blank">
+          <figure class="homepage-fold-4-brands-cbs">
+            <img src="img/brands/cbs-logo.png" alt="cbs logo">
+          </figure>
+        </a>
+      </div>
+      <div class="homepage-fold-4-brand item">
+        <a href="https://www.youtube.com/watch?v=uBwRjSrKYSI" target="_blank">
+          <figure class="homepage-fold-4-brands-cbs">
+            <img src="img/brands/cbs-logo.png" alt="cbs logo">
+          </figure>
+        </a>
+      </div>
+      <div class="homepage-fold-4-brand item">
+        <a href="https://www.youtube.com/watch?v=uBwRjSrKYSI" target="_blank">
+          <figure class="homepage-fold-4-brands-cbs">
+            <img src="img/brands/cbs-logo.png" alt="cbs logo">
+          </figure>
+        </a>
+      </div>
+      <div class="homepage-fold-4-brand item">
+        <a href="https://www.youtube.com/watch?v=uBwRjSrKYSI" target="_blank">
+          <figure class="homepage-fold-4-brands-cbs">
+            <img src="img/brands/cbs-logo.png" alt="cbs logo">
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div class="homepage-fold-4-owl-nav owl-nav-custom">
+      <div class="prvBtnBrands">
+        <img src="img/icons/prev-arrow-white.png" alt="prev arrow">
+      </div>
+      <div class="nxtBtnBrands">
+        <img src="img/icons/next-arrow.png" alt="next arrow">
+      </div>
+    </div>
+  </div>
+</section>
 <section class="homepage-fold-5">
   <div class="homepage-container">
     <div class="homepage-title homepage-fold-5-title">
@@ -100,7 +174,7 @@
     <div class="homepage-fold-5-description">
       Here are some of our most important<br>recognitions
     </div>
-    <div class="homepage-fold-5-awards-container owl-carousel owl-theme">
+    <div class="homepage-fold-5-awards-container owl-carousel owl-theme" id="awards-carousel">
       <div class="homepage-fold-5-award item">
         <figure>
           <img src="img/award-1.jpg" alt="filter step 4">
@@ -239,22 +313,23 @@
         </div>
       </div>
     </div>
-      <div class="owl-nav-custom">
-        <div class="prvBtn">
-          <img src="img/icons/prev-arrow.png" alt="prev arrow">
-        </div>
-        <div class="nxtBtn">
-          <img src="img/icons/next-arrow.png" alt="next arrow">
-        </div>
+    <div class="owl-nav-custom">
+      <div class="prvBtn">
+        <img src="img/icons/prev-arrow.png" alt="prev arrow">
       </div>
+      <div class="nxtBtn">
+        <img src="img/icons/next-arrow.png" alt="next arrow">
+      </div>
+    </div>
   </div>
 </section>
 {% endblock %}
 
 {% block js_inline %}
 <script type="text/javascript">
-	let $owl = $('.owl-carousel');
-	$owl.owlCarousel({
+	let $owl_awards = $('#awards-carousel');
+	let $owl_brands = $('#brands-container');
+	$owl_awards.owlCarousel({
 		loop: true,
 		margin: 30,
 		nav: false,
@@ -270,12 +345,35 @@
 			}
 		}
 	});
-	$owl.owlCarousel();
-	$('.nxtBtn').click(function() {
-		$owl.trigger('next.owl.carousel');
+	$owl_awards.owlCarousel();
+	$('.nxtBtn').click(function () {
+		$owl_awards.trigger('next.owl.carousel');
 	});
-	$('.prvBtn').click(function() {
-		$owl.trigger('prev.owl.carousel', [300]);
+	$('.prvBtn').click(function () {
+		$owl_awards.trigger('prev.owl.carousel', [300]);
+	});
+	$owl_brands.owlCarousel({
+		loop: true,
+		margin: 0,
+		nav: false,
+		responsive: {
+			0: {
+				items: 2
+			},
+			600: {
+				items: 3
+			},
+			1000: {
+				items: 5
+			}
+		}
+	});
+	$owl_brands.owlCarousel();
+	$('.nxtBtnBrands').click(function () {
+		$owl_brands.trigger('next.owl.carousel');
+	});
+	$('.prvBtnBrands').click(function () {
+		$owl_brands.trigger('prev.owl.carousel', [300]);
 	});
 </script>
 {% endblock %}
