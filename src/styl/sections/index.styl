@@ -225,6 +225,10 @@
       border 1px solid white !important
       color white !important
 .homepage-fold-5
+  &-container
+    border-bottom solid 1px #e2e2e2
+    margin-bottom 20px !important
+    padding-bottom 70px
   &-title
     margin-top 50px
   &-subtitle
@@ -315,6 +319,102 @@
   &-owl-nav
     margin-left auto
     margin-top 20px
+.homepage-fold-6
+  &-container
+    margin-top 70px !important
+    justify-content center
+  &-title
+    justify-content center
+    flex-wrap wrap
+    span
+      flex-basis 100%
+      text-align center
+      margin-bottom 20px
+  &-subtitle
+    font-family Gotham
+    font-size remify(45)
+    font-weight bold
+    font-style normal
+    font-stretch normal
+    line-height 1.09
+    letter-spacing -0.1px
+    text-align center
+    color #232323
+    @media screen and (max-width: 992px)
+      font-size remify(27)
+  &-testimonial
+    width 99% !important
+    min-height 262px !important
+    border: solid 1px #c2c2c2
+    padding 30px
+    @media screen and (max-width: 992px)
+      padding 15px
+    &-header
+      display flex
+      padding-bottom 20px
+      border-bottom 1px solid #c2c2c2
+      &-avatar
+        margin 0
+        height 103px
+        width 103px
+        img
+          height 103px
+          width 103px
+        @media screen and (max-width: 992px)
+          height 82px
+          width 82px
+          img
+            width 82px!important
+            height 82px
+      &-name
+        padding-left 20px
+        display flex
+        flex-direction column
+        justify-content flex-end
+        span:first-child
+          font-family: Gotham;
+          font-size: remify(19)
+          font-weight: 500;
+          color: #878787;
+          @media screen and (max-width: 992px)
+            font-size remify(14)
+        span:last-child
+          font-family: Gotham;
+          font-size: remify(10);
+          font-weight: bold;
+          color: #232323;
+          @media screen and (max-width: 992px)
+            font-size remify(10)
+      &-quotation
+        margin 0 0 0 auto
+        width 80px
+        height 57px
+        @media screen and (max-width: 992px)
+          width 64px !important
+          height 62px
+    &-content
+      font-family Gotham
+      font-size 13px
+      font-style italic
+      letter-spacing 0.5px
+      margin-top 20px
+      padding-left 123px
+      color #515151
+      @media screen and (max-width: 992px)
+        padding-left 0
+    &-container
+      display flex
+      justify-content space-between
+      margin-top 84px
+      @media screen and (max-width: 992px)
+        margin-top 40px
+  &-owl-nav
+    margin-top 50px
+    margin-left auto
+    @media screen and (max-width: 992px)
+      margin-top 30px
+    @media screen and (max-width: 576px)
+      margin-top 20px !important
 .homepage-title
   color black
   display flex

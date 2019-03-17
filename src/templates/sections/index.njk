@@ -117,7 +117,8 @@
         </a>
       </div>
       <div class="homepage-fold-4-brand item">
-        <a href="https://edition.cnn.com/videos/tv/2016/04/12/exp-gps-0403-last-look-drinkable-book.cnn" target="_blank">
+        <a href="https://edition.cnn.com/videos/tv/2016/04/12/exp-gps-0403-last-look-drinkable-book.cnn"
+           target="_blank">
           <figure class="homepage-fold-4-brands-cnn">
             <img src="img/brands/cnn-logo.png" alt="cnn logo">
           </figure>
@@ -163,7 +164,7 @@
   </div>
 </section>
 <section class="homepage-fold-5">
-  <div class="homepage-container">
+  <div class="homepage-container homepage-fold-5-container">
     <div class="homepage-title homepage-fold-5-title">
       <div class="homepage-title-line"></div>
       <span>AWARDS & RECOGNITIONS</span>
@@ -323,12 +324,69 @@
     </div>
   </div>
 </section>
+<section class="homepage-fold-6">
+  <div class="homepage-container homepage-fold-6-container">
+    <div class="homepage-title homepage-fold-6-title">
+      <span>WHAT THEY SAY</span>
+      <div class="homepage-title-line"></div>
+    </div>
+    <div class="homepage-fold-6-subtitle">
+      Testimonials
+    </div>
+    <div class="homepage-fold-6-testimonial-container owl-carousel owl-theme" id="testimonial-carousel">
+      <div class="homepage-fold-6-testimonial">
+        <div class="homepage-fold-6-testimonial-header">
+          <figure class="homepage-fold-6-testimonial-header-avatar">
+            <img src="img/avatar-men.jpg" alt="Bangladeshi Consumer">
+          </figure>
+          <div class="homepage-fold-6-testimonial-header-name">
+            <span>Bangladeshi Consumer</span>
+            <span>BANGLADESH</span>
+          </div>
+          <figure class="homepage-fold-6-testimonial-header-quotation">
+            <img src="img/icons/quotation-marks.svg" alt="quotation marks">
+          </figure>
+        </div>
+        <div class="homepage-fold-6-testimonial-content">
+          Folia Water does not only make my water safe to drink, it tastes better as well.
+        </div>
+      </div>
+      <div class="homepage-fold-6-testimonial">
+        <div class="homepage-fold-6-testimonial-header">
+          <figure class="homepage-fold-6-testimonial-header-avatar">
+            <img src="img/avatar-woman.jpg" alt="Montserrat Sanchez">
+          </figure>
+          <div class="homepage-fold-6-testimonial-header-name">
+            <span>Montserrat Sanchez</span>
+            <span>MEXICO</span>
+          </div>
+          <figure class="homepage-fold-6-testimonial-header-quotation">
+            <img src="img/icons/quotation-marks.svg" alt="quotation marks">
+          </figure>
+        </div>
+        <div class="homepage-fold-6-testimonial-content">
+          I do not want my granddaughter drinking tap water, and we cannot trust the water fountains at the schools.
+          Folia Waters is the first solution I have seen that I can afford.
+        </div>
+      </div>
+    </div>
+    <div class="owl-nav-custom homepage-fold-6-owl-nav">
+      <div class="prvBtnTestimonial">
+        <img src="img/icons/prev-arrow.png" alt="prev arrow">
+      </div>
+      <div class="nxtBtnTestimonial">
+        <img src="img/icons/next-arrow.png" alt="next arrow">
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
 
 {% block js_inline %}
 <script type="text/javascript">
 	let $owl_awards = $('#awards-carousel');
 	let $owl_brands = $('#brands-container');
+	let $owl_testimonial = $('#testimonial-carousel');
 	$owl_awards.owlCarousel({
 		loop: true,
 		margin: 30,
@@ -374,6 +432,29 @@
 	});
 	$('.prvBtnBrands').click(function () {
 		$owl_brands.trigger('prev.owl.carousel', [300]);
+	});
+	$owl_testimonial.owlCarousel({
+		loop: true,
+		margin: 30,
+		nav: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			1000: {
+				items: 2
+			}
+		}
+	});
+	$owl_testimonial.owlCarousel();
+	$('.nxtBtnTestimonial').click(function () {
+		$owl_testimonial.trigger('next.owl.carousel');
+	});
+	$('.prvBtnTestimonial').click(function () {
+		$owl_testimonial.trigger('prev.owl.carousel', [300]);
 	});
 </script>
 {% endblock %}
