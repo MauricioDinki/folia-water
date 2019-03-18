@@ -1,679 +1,631 @@
-.homepage-fold-1
-  background-image: url('../img/people-drinking-water-blue.jpg')
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  height 100vh
+/* Homepage Utils*/
+.homepage-button
+  background-color #fcb133
+  font-size remify(16)
+  width 258px
+  height 78px
+  color white
+  box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.41)
   display flex
-  justify-content center
   align-items center
-  flex-direction column
-  font-weight 300
-  font-family "Gotham"
+  justify-content space-around
+  font-weight bold
+  letter-spacing 1.5px
+  @media screen and (max-width: 1300px)
+    width 232.2px
+    height 70.2px
+    font-size remify(14)
+  @media screen and (max-width: 992px)
+    width 206.4px
+    height 62.4px
+    font-size remify(13)
+  @media screen and (max-width: 576px)
+    width 180.6px
+    height 54.6px
+    font-size remify(11)
+  &:hover
+    background-color #df9a2e
 
-  &-title
-    font-size: remify(60);
-    font-weight: normal;
-    line-height: 1.17;
-    letter-spacing: -0.1px;
-    text-align: center;
-    color: #ffffff;
-    display block
-    box-sizing border-box
-    span
-      font-weight bold
-
-  &-subtitle
-    font-size: remify(23);
-    font-weight: normal;
-    line-height: 1.83;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #ffffff;
-    margin-top 20px
-
-  &-button
-    font-size remify(17)
-    background-color #fcb133
-    height 78px
-    width 284px
-    color white
-    text-align center
-    box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.41);
-    margin-top 20px
-    display flex
-    align-items center
-    justify-content center
-
-    &:hover
-      background-color #df9a2e
-
-    span
-      margin-right 30px
-
-.homepage-fold-2
-  background-color white
-  margin-top 50px
-  padding-bottom 50px
-
-  &-description
-    font-family: "Gotham";
-    font-size: remify(32);
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.27;
-    letter-spacing: 0px;
-    color: #232323;
-    flex-basis 50%
-
-  &-reach
-    flex-basis 100%
-    margin-top 30px
-    display flex
-    &-image
-      flex-basis 50%
-      margin 0
-      img
-        width 100%
-        height auto
-    &-description
-      flex-basis 50%
-      div
-        font-family: Gotham;
-        font-size: remify(15);
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.83;
-        letter-spacing: 0.5px;
-        color: #515151;
-        width 67%
-        margin 15px 0 0 40px
-      a
-        margin 15px 0 0 40px
-
-        &:hover
-          background-color #df9a2e
-
-        span
-           margin-right 30px
-
-.homepage-fold-3
-  &-left-column
-    flex-basis 50%
-    text-align right
-    padding-right 100px
-  &-right-column
-    flex-basis 50%
-    display flex
-    flex-wrap wrap
-    figure
-      flex-basis 50%
-      margin 0
-      padding-bottom 10px
-      padding-top 10px
-      position relative
-      &:nth-child(odd)
-        padding-left 0
-        padding-right 10px
-        span
-          left 0
-      &:nth-child(even)
-        padding-left 10px
-        padding-right 0
-        span
-          left 10px
-      img
-        width 100%
-        height auto
-      span
-        width: 47px;
-        height: 47px;
-        background-color: #fcb133;
-        position absolute
-        bottom 15px
-        text-align center
-        line-height: 47px;
-        color white
-        font-family "Gotham"
-        display none
-  &-title
-    justify-content flex-end
-    margin-top 70px
-  &-subtitle
-    font-family: Gotham;
-    font-size: remify(45)
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.04;
-    letter-spacing: -0.1px;
-    text-align: right;
-    color: #232323;
-  &-description
-    font-family: Gotham;
-    font-size: remify(18)
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.72;
-    letter-spacing: 0.5px;
-    text-align: right;
-    color: #515151;
-    margin-top 10px
-  &-button
-    margin 20px 0 0 auto
-.homepage-fold-4
-  background-color: #2c3cad;
-  margin-top 70px
-  &-title
-    margin-top 60px
-    span
-      color white !important
-
-  &-brands
-    &-time
-      width: 140px;
-      height: 42px;
-      object-fit: contain;
-    &-china
-      //width: 271px;
-      //height: 37px;
-      width 100%
-      height auto
-      object-fit: contain
-      margin 0 50px 0 0
-    &-bbc
-      width: 161px;
-      height: 46px;
-      object-fit: contain;
-      img
-        margin-left 45px
-        @media screen and (max-width: 576px)
-          margin-left 0
-    &-cnn
-      width: 104px;
-      height: 48px;
-      object-fit: contain
-      img
-        margin-left 45px
-        @media screen and (max-width: 576px)
-          margin-left 0
-          height 48px
-          width: 104px
-      //padding-left 50px
-    &-cbs
-      width: 159px;
-      height: 48px;
-      object-fit: contain;
-  &-brands-container
-    margin-top 20px
-    a
-      figure
-        margin 0
-        @media screen and (max-width: 576px)
-          width 90%
-        img
-          @media screen and (max-width: 576px)
-            width 100%
-  &-owl-nav
-    margin-left auto
-    margin-top 50px
-    margin-bottom 40px
-    div:first-child
-      border 1px solid white !important
-      color white !important
-.homepage-fold-5
-  &-container
-    border-bottom solid 1px #e2e2e2
-    margin-bottom 20px !important
-    padding-bottom 70px
-  &-title
-    margin-top 50px
-  &-subtitle
-    font-family: Gotham;
-    font-size: remify(45)
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.04;
-    letter-spacing: -0.1px;
-    text-align: left;
-    color: #232323;
-    flex-basis 100%
-  &-description
-    font-family: Gotham;
-    font-size: remify(18)
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.72;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: #515151;
-    margin-top 10px
-    flex-basis 100%
-  &-awards-container
-    margin-top 70px
-  &-award
-    &-title
-      margin 10px 0 !important
-      span
-        font-size remify(27px) !important
-      div
-        margin-left 20px
-    &-subtitle
-      font-family: Gotham;
-      font-size: remify(17);
-      font-weight: 500;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.24;
-      letter-spacing: 0.2px;
-      color: #242424;
-      margin 0 0 20px 0
-    &-description
-      font-family: Gotham;
-      font-size: remify(14);
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.86;
-      letter-spacing: 0.5px;
-      color: #515151;
-    figure
-      width 100%
-      margin 0
-      position relative
-      a
-        position absolute
-        width: 20%;
-        height: 20%;
-        background-color: #fcb133;
-        bottom 0
-        right  0
-        font-weight: bold;
-        line-height 76px
-        display flex
-        justify-content center
-        align-items center
-        span
-          display none
-          font-family Gotham
-          font-size: 15px;
-          font-weight: bold;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.87;
-          letter-spacing: 1.4px;
-          color: #ffffff;
-        img
-          height 17px !important
-          width 17px !important
-        &:hover
-          width 60%
-          justify-content space-around
-        &:hover > span
-          display block
-  &-owl-nav
-    margin-left auto
-    margin-top 20px
-.homepage-fold-6
-  &-container
-    margin-top 70px !important
-    justify-content center
-  &-title
-    justify-content center
-    flex-wrap wrap
-    span
-      flex-basis 100%
-      text-align center
-      margin-bottom 20px
-  &-subtitle
-    font-family Gotham
-    font-size remify(45)
-    font-weight bold
-    font-style normal
-    font-stretch normal
-    line-height 1.09
-    letter-spacing -0.1px
-    text-align center
-    color #232323
-    @media screen and (max-width: 992px)
-      font-size remify(27)
-  &-testimonial
-    width 99% !important
-    min-height 262px !important
-    border: solid 1px #c2c2c2
-    padding 30px
-    @media screen and (max-width: 992px)
-      padding 15px
-    &-header
-      display flex
-      padding-bottom 20px
-      border-bottom 1px solid #c2c2c2
-      &-avatar
-        margin 0
-        height 103px
-        width 103px
-        img
-          height 103px
-          width 103px
-        @media screen and (max-width: 992px)
-          height 82px
-          width 82px
-          img
-            width 82px!important
-            height 82px
-      &-name
-        padding-left 20px
-        display flex
-        flex-direction column
-        justify-content flex-end
-        span:first-child
-          font-family: Gotham;
-          font-size: remify(19)
-          font-weight: 500;
-          color: #878787;
-          @media screen and (max-width: 992px)
-            font-size remify(14)
-        span:last-child
-          font-family: Gotham;
-          font-size: remify(10);
-          font-weight: bold;
-          color: #232323;
-          @media screen and (max-width: 992px)
-            font-size remify(10)
-      &-quotation
-        margin 0 0 0 auto
-        width 80px
-        height 57px
-        @media screen and (max-width: 992px)
-          width 64px !important
-          height 62px
-    &-content
-      font-family Gotham
-      font-size 13px
-      font-style italic
-      letter-spacing 0.5px
-      margin-top 20px
-      padding-left 123px
-      color #515151
-      @media screen and (max-width: 992px)
-        padding-left 0
-    &-container
-      display flex
-      justify-content space-between
-      margin-top 84px
-      @media screen and (max-width: 992px)
-        margin-top 40px
-  &-owl-nav
-    margin-top 50px
-    margin-left auto
-    @media screen and (max-width: 992px)
-      margin-top 30px
-    @media screen and (max-width: 576px)
-      margin-top 20px !important
 .homepage-title
   color black
   display flex
   align-items center
   flex-basis 100%
-  margin-bottom 20px
-
   &-line
     width 50px
     height 3px
     border-radius 0.5px
-    background-color: #fcb133;
+    background-color #fcb133
     margin-right 20px
   span
-    font-family: "Gotham";
-    font-size: 15px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: 0px;
-    color: #232323;
-
-.homepage-button
-  background-color #fcb133
-  font-size remify(14)
-  width 244px
-  height 67px
-  color white
-  text-align center
-  box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.41);
-  display flex
-  align-items center
-  justify-content space-around
-
-  &:hover
-    background-color #df9a2e
-
-.homepage-container
-  width 85%
+    font-size remify(15)
+    font-weight bold
+    color #232323
+    line-height 3.27
+.homepage-wrapper
+  display block
+  width 82%
   margin 0 auto
+  @media screen and (max-width: 576px)
+    width 85%
+.owl-nav-custom
   display flex
-  flex-direction row
-  flex-wrap wrap
+  div
+    width 50px
+    height 50px
+    display flex
+    cursor pointer
+    justify-content center
+    align-items center
+    &:first-child
+      background-color transparent
+      border 1px solid black
+      margin-right 10px
+    &:last-child
+      background-color #fcb133
+      color black
+      box-shadow 0 12px 34px 0 rgba(0, 0, 0, 0.41)
+.owl-theme .owl-dots .owl-dot span
+  width 20px
+  height 20px
+  background #515151
+  border-radius 50%
 
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 20px;
-  height: 20px;
-  background: #515151;
-  border-radius: 50%;
-}
 .owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot.active span:hover {background: #fcb133;}
-.owl-theme .owl-dots .owl-dot span:hover {background: #fcb133;}
+.owl-theme .owl-dots .owl-dot.active span:hover
+  background: #fcb133
+.owl-theme .owl-dots .owl-dot span:hover
+  background #fcb133
 
-.owl-nav-custom {
-  display flex
-}
-.owl-nav-custom div {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  cursor: pointer;
-  justify-content center
-  align-items center
-
-}
-
-.owl-nav-custom div:first-child {
-  background-color: transparent;
-  border 1px solid black
-  margin-right 10px
-}
-.owl-nav-custom div:last-child {
-  background-color: #fcb133;
-  color black
-  box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.41);
-}
-
-@media screen and (max-width: 992px) // Used for portrait tablets
-  .homepage-fold-1
-    &-title
-      font-size remify(50)
-    &-subtitle
-      font-size remify(19.7)
-      margin-top 30px
-    &-button
-      width 244px
-      height 67px
-      margin-top 40px
-
-  .homepage-fold-2
-    &-container
-      width 90%
-    &-description
-      flex-basis 64%
-      font-size: remify(27);
-    &-reach
-      margin-top 40px
-      flex-wrap wrap
-      justify-content center
-      &-image
-        flex-basis 50%
-      &-description
-        flex-basis 50%
-        div
-          margin 0 0 0 40px
-          width 80%
-          font-size: remify(12);
-        a
-          margin 15px 0 0 40px
-
-  .homepage-fold-3
-    &-left-column
-      flex-basis 45%
-      padding-right 35px
-    &-right-column
-      flex-basis 55%
-    &-title
-      margin-top 30px
-    &-subtitle
-      font-size: remify(27);
-    &-description
-      font-size remify(12)
-
-  .homepage-fold-5
-    &-subtitle
-      font-size remify(27)
-    &-description
-      font-size remify(12)
-    &-awards
-      &-container
-        margin-top 30px
-    &-award
-      &-title
-        span
-          font-size remify(20) !important
-      &-subtitle
-          font-size remify(15)
-      &-description
-        font-size remify(11)
-      figure
-        a
-          span
-            font-size remify(10)
-          img
-            height 13px !important
-            width 13px !important
-
-  .homepage-container
-    width 90%
-  .homepage-button
-    width: 183px
-    height: 57px
-  .owl-nav-custom
-    div
-      height 40px
-      width 40px
+/* Homepage Styles */
+.homepage
+  &-fold-1
+    background-image url('../img/people-drinking-water-blue.jpg')
+    background-position center center
+    background-size cover
+    background-attachment fixed
+    height 100vh
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
     @media screen and (max-width: 576px)
-      margin-top 40px
-@media screen and (max-width: 767px) // Used for landscape phones
-  .homepage-fold-1
-      &-title
+      padding 0 10px
+    &-title
+      font-size remify(60)
+      line-height 1.17
+      letter-spacing -0.1px
+      text-align center
+      color #ffffff
+      @media screen and (max-width: 1300px)
+        font-size remify(54)
+      @media screen and (max-width: 992px)
+        font-size remify(45)
+      @media screen and (max-width: 767px)
         font-size remify(32)
-      &-subtitle
+      @media screen and (max-width: 576px)
+        font-size remify(20)
+      span
+        font-weight bold
+
+    &-subtitle
+      font-size remify(23)
+      line-height 1.83
+      letter-spacing 1px
+      text-align center
+      color #ffffff
+      overflow auto
+      padding-top 20px
+      @media screen and (max-width: 1300px)
+        font-size remify(21)
+      @media screen and (max-width: 992px)
+        font-size remify(17)
+      @media screen and (max-width: 767px)
         font-size remify(12)
-        margin-top 20px
-      &-button
+      @media screen and (max-width: 576px)
+        font-size remify(8)
+    &-button
+      width 284px
+      height 78px
+      font-size remify(16)
+      margin-top 36px
+      @media screen and (max-width: 1300px)
         font-size remify(14)
+      @media screen and (max-width: 992px)
+        font-size remify(14)
+        margin-top 40px
+        width 250px
+        height 69px
+      @media screen and (max-width: 767px)
+        font-size remify(12)
         width 195px
         height 50px
         margin-top 20px
-
-
-
-@media screen and (max-width: 576px)
-  .homepage-fold-1
-    &-title
-      font-size remify(28)
-    &-subtitle
-      font-size remify(11)
-      margin-top 20px
-    &-button
-      width 210px
-      height 58px
-      margin-top 20px
-
-  .homepage-fold-2
-    &-container
-      width 85%
+      @media screen and (max-width: 576px)
+        font-size remify(10)
+        width 170px
+        height 47px
+        margin-top 20px
+  &-fold-2
+    padding 50px 0
+    display flex
+    flex-direction column
     &-description
-      flex-basis 100%
-      font-size: remify(27);
+      width 52%
+      margin-top 23.2px
+      font-size remify(37)
+      font-weight bold
+      line-height 1.27
+      color #232323
+      @media screen and (max-width: 1300px)
+        margin-top 10px
+        font-size remify(33)
+      @media screen and (max-width: 992px)
+        width 64%
+        font-size remify(27)
+      @media screen and (max-width: 576px)
+        width 100%
+        font-size remify(22)
     &-reach
-      margin-top 25px
-      flex-wrap wrap
-      justify-content center
+      margin-top 43px
+      display flex
+      @media screen and (max-width: 992px)
+        margin-top 40px
+        flex-wrap wrap
+        justify-content flex-start
+      @media screen and (max-width: 576px)
+        margin-top 25px
+        flex-wrap wrap
+        justify-content center
       &-image
-        flex-basis 100%
+        width 52%
+        margin 0
+        @media screen and (max-width: 992px)
+          width 64%
+        @media screen and (max-width: 576px)
+          width 100%
+        img
+          width 100%
+          height auto
       &-description
-        flex-basis 100%
+        width 48%
+        padding 16px 95px 0 116px
+        @media screen and (max-width: 1300px)
+          padding 16px 90px 0 90px
+        @media screen and (max-width: 992px)
+          width 64%
+          padding 16px 0 0 0
+        @media screen and (max-width: 576px)
+          width 100%
+          padding 5px 0 0 0
         div
-          margin 0 0 0 0
-          width 80%
-          font-size: remify(15);
-          margin-top 15px
-          text-align left
+          font-size remify(15)
+          line-height 1.83
+          letter-spacing 0.5px
+          color #515151
+          @media screen and (max-width: 1300px)
+            font-size remify(14)
+          @media screen and (max-width: 992px)
+            width 80%
+            font-size: remify(12);
+          @media screen and (max-width: 992px)
+            margin 0
+            width 100%
+            font-size: remify(12);
+            margin-top 15px
+            text-align left
         a
-          margin: 15px 0 0 0;
-  .homepage-fold-3
-    &-left-column
-      flex-basis 100%
-    &-right-column
-      flex-basis 100%
-      margin-top 30px
-    &-title
-      justify-content flex-start
-    &-subtitle
-      text-align left
-    &-description
-      font-size: remify(15);
-      text-align left
-      br
-        display none
-    &-button
-      margin 15px auto 0 0
+          margin-top 44px
+          @media screen and (max-width: 1300px)
+            margin-top 40px
+          @media screen and (max-width: 546px)
+            margin-top 15px
 
-  .homepage-fold-5
+  &-fold-3
+    padding 70px 0
+    display flex
+    flex-direction row
+    background-image url('../img/easy-to-use-bg.png')
+    background-position center center
+    background-size cover
+    background-attachment fixed
+    flex-wrap wrap
+    @media screen and (max-width: 576px)
+      padding 30px 0 70px 0
+    &-left-column
+      flex-basis 45%
+      text-align right
+      padding-right 100px
+      @media screen and (max-width: 992px)
+        padding-right 50px
+      @media screen and (max-width: 576px)
+        flex-basis 100%
+        width 100%
+        padding 0
+    &-right-column
+      flex-basis 55%
+      display flex
+      flex-wrap wrap
+      padding-right 100px
+      @media screen and (max-width: 992px)
+        padding-right 0
+      @media screen and (max-width: 576px)
+        flex-basis 100%
+        width 100%
+        margin-top 50px
+      figure
+        flex-basis 50%
+        margin 0
+        position relative
+        &:nth-child(odd)
+          padding-right 14px
+          @media screen and (max-width: 576px)
+            padding-right 7px
+        &:nth-child(even)
+          padding-left 14px
+          @media screen and (max-width: 576px)
+            padding-left 7px
+        &:nth-child(-n+2)
+          padding-bottom 11.5px
+          @media screen and (max-width: 576px)
+            padding-bottom 7px
+          span
+            bottom 11.5px
+            @media screen and (max-width: 576px)
+              bottom 7px
+        &:nth-child(n+3)
+          padding-top 11.5px
+          @media screen and (max-width: 576px)
+            padding-top 7px
+        img
+          width 100%
+          height 100%
+        span
+          width 47px
+          height 47px
+          background-color #fcb133
+          position absolute
+          text-align center
+          line-height 47px
+          color white
+          display block
+          bottom 0
+          @media screen and (max-width: 1300px)
+            width 42px
+            height 42px
+            line-height 42px
+          @media screen and (max-width: 576px)
+            width 35px
+            height 35px
+            line-height 35px
+            font-size remify(15)
+    &-title
+      justify-content flex-end
+      @media screen and (max-width: 576px)
+        justify-content flex-start
+    &-subtitle
+      font-size remify(45)
+      font-weight bold
+      line-height 1.04
+      letter-spacing -0.1px
+      text-align right
+      color #232323
+      padding-top 23px
+      @media screen and (max-width: 1300px)
+        font-size remify(41)
+      @media screen and (max-width: 992px)
+        font-size remify(37)
+        padding-top 10px
+      @media screen and (max-width: 576px)
+        text-align left
+        font-size remify(27)
     &-description
-      font-size remify(15)
-    &-awards
-      &-container
+      font-size: remify(18)
+      line-height 1.72
+      letter-spacing 0.5px
+      text-align right
+      color #515151
+      padding-top 15px
+      @media screen and (max-width: 1300px)
+        font-size remify(16)
+      @media screen and (max-width: 992px)
+        font-size remify(12)
+      @media screen and (max-width: 576px)
+        text-align left
+        font-size remify(12)
+    &-button
+      margin 34px 0 0 auto
+      @media screen and (max-width: 1300px)
+        margin 31px 0 0 auto
+      @media screen and (max-width: 576px)
+        margin 18px auto 0 0
+  &-fold-4
+    background-color: #2c3cad;
+    padding 62px 0
+    &-title
+      span
+        color white !important
+    &-brands
+      &-time
+        width 140px
+        height 42px
+        object-fit contain
+      &-china
+        width 100%
+        height auto
+        margin 0 50px 0 0
+      &-bbc
+        width 161px
+        height 46px
+        img
+          margin-left 45px
+          @media screen and (max-width: 576px)
+            margin-left 0
+      &-cnn
+        width 104px
+        height 48px
+        object-fit contain
+        img
+          margin-left 45px
+          @media screen and (max-width: 576px)
+            margin-left 0
+            height 48px
+            width: 104px
+      &-cbs
+        width 159px
+        height 48px
+    &-brands-container
+      margin-top 20px
+      a
+        figure
+          margin 0
+          @media screen and (max-width: 576px)
+            width 90%
+          img
+            @media screen and (max-width: 576px)
+              width 100%
+    &-owl-nav
+      justify-content flex-end
+      margin-top 50px
+      div:first-child
+        border 1px solid white !important
+        color white !important
+  &-fold-5
+    padding 85px 0
+    border-bottom 1px solid #e2e2e2
+    @media screen and (max-width: 576px)
+      padding 40px 0
+    &-subtitle
+      font-size: remify(45)
+      font-weight bold
+      line-height 1.09
+      letter-spacing -0.1px
+      text-align left
+      color #232323
+      flex-basis 100%
+      @media screen and (max-width: 1300px)
+        font-size remify(41)
+      @media screen and (max-width: 992px)
+        font-size remify(37)
+      @media screen and (max-width: 576px)
+        font-size remify(27)
+    &-description
+      font-size remify(18)
+      line-height 1.72
+      letter-spacing 0.5px
+      text-align left
+      color #515151
+      padding-top 10px
+      flex-basis 100%
+      @media screen and (max-width: 1300px)
+        font-family remify(16)
+      @media screen and (max-width: 992px)
+        font-size remify(12)
+      @media screen and (max-width: 576px)
+        font-size remify(12)
+    &-awards-container
+      margin-top 68px
+      @media screen and (max-width: 1300px)
+        margin-top 61px
+      @media screen and (max-width: 992px)
         margin-top 30px
+      @media screen and (max-width: 576px)
+        margin-top 15px
     &-award
       &-title
+        padding-top 30px
         span
-          font-size remify(27) !important
+          font-size remify(27px)
+          line-height 0.96
+          letter-spacing 0.4px
+          @media screen and (max-width: 1300px)
+            font-size remify(24)
+          @media screen and (max-width: 992px)
+            font-size remify(22)
+        div
+          margin-left 20px
       &-subtitle
         font-size remify(17)
+        font-weight 500
+        line-height 1.24
+        letter-spacing 0.2px
+        color #242424
+        padding 10px 0 0 0
+        @media screen and (max-width: 1300px)
+          font-size remify(15)
+        @media screen and (max-width: 992px)
+          font-size remify(14)
       &-description
         font-size remify(14)
+        line-height 1.86
+        letter-spacing 0.5px
+        color #515151
+        padding-top 23px
+        @media screen and (max-width: 1300px)
+          font-size remify(13)
+        @media screen and (max-width: 992px)
+          font-size remify(11)
+        @media screen and (max-width: 576px)
+          padding 10px 0 30px 0
       figure
+        width 100%
+        margin 0
+        position relative
         a
+          position absolute
+          width 20%
+          height 20%
+          background-color #fcb133
+          bottom 0
+          right  0
+          font-weight bold
+          line-height 76px
+          display flex
+          justify-content center
+          align-items center
           span
-            font-size remify(17)
+            display none
+            font-family Gotham
+            font-size 15px
+            font-weight bold
+            line-height 1.87
+            letter-spacing 1.4px
+            color #ffffff
+            @media screen and (max-width: 992px)
+              font-size remify(10)
           img
-            height 13px !important
-            width 13px !important
+            height 17px !important
+            width 17px !important
+            @media screen and (max-width: 992px)
+              height 13px !important
+              width 13px !important
+          &:hover
+            width 60%
+            justify-content space-around
+          &:hover > span
+            display block
+    &-owl-nav
+      justify-content flex-end
+      @media screen and (max-width: 576px)
+        margin-top 30px
+  &-fold-6
+    padding 69px 0
+    @media screen and (max-width: 576px)
+      padding 30px 0 50px 0
+    &-title
+      justify-content center
+      flex-wrap wrap
+      span
+        flex-basis 100%
+        text-align center
+        padding-bottom 16px
+      div
+        margin 0
+    &-subtitle
+      font-size remify(45)
+      font-weight bold
+      line-height 1.09
+      letter-spacing -0.1px
+      text-align center
+      color #232323
+      margin-top 16px
+      @media screen and (max-width: 1300px)
+        font-size remify(41)
+      @media screen and (max-width: 992px)
+        font-size remify(37)
+      @media screen and (max-width: 576px)
+        font-size remify(27)
 
-
-  .homepage-container
-    width 85%
-  .homepage-button
-    width: 197px;
-    height: 51px;
-
-  .owl-nav-custom
-    div
-      height 50px
-      width 50px
-
-
+    &-testimonial
+      width 99%
+      min-height 310px
+      border: solid 1px #c2c2c2
+      padding 30px
+      @media screen and (max-width: 992px)
+        padding 15px
+      &-container
+        display flex
+        justify-content space-between
+        margin-top 58px
+        min-height 302px
+        @media screen and (max-width: 992px)
+          margin-top 40px
+      &-header
+        display flex
+        padding-bottom 20px
+        border-bottom 1px solid #c2c2c2
+        &-avatar
+          margin 0
+          height 103px
+          width 103px
+          img
+            width 100%
+            height 100%
+          @media screen and (max-width: 1300px)
+            height 93px
+            width 93px
+            img
+              height 93px !important
+              width 93px !important
+          @media screen and (max-width: 992px)
+            height 82px
+            width 82px
+            img
+              height 82px !important
+              width 82px !important
+          @media screen and (max-width: 992px)
+            height 75px
+            width 75px
+            img
+              height 75px !important
+              width 75px !important
+        &-name
+          padding-left 10px
+          display flex
+          flex-direction column
+          justify-content flex-end
+          span:first-child
+            font-size remify(19)
+            font-weight 500
+            color #878787
+            @media screen and (max-width: 1300px)
+              font-size remify(17)
+            @media screen and (max-width: 992px)
+              font-size remify(14)
+          span:last-child
+            font-size: remify(14)
+            font-weight bold
+            color #232323
+            @media screen and (max-width: 1300px)
+              font-size remify(13)
+            @media screen and (max-width: 992px)
+              font-size remify(10)
+        &-quotation
+          margin 0 0 0 auto
+          width 80px
+          height 57px
+          @media screen and (max-width: 1300px)
+            width 72px
+            height 46px
+          @media screen and (max-width: 992px)
+            width 64px
+            height 62px
+      &-content
+        font-size remify(13)
+        font-style italic
+        letter-spacing 0.5px
+        line-height 2
+        margin-top 20px
+        padding-left 123px
+        color #515151
+        @media screen and (max-width: 1300px)
+          padding-left 113px
+        @media screen and (max-width: 992px)
+          padding-left 0
+    &-owl-nav
+      margin-top 50px
+      justify-content flex-end
+      @media screen and (max-width: 992px)
+        margin-top 30px
+      @media screen and (max-width: 576px)
+        margin-top 20px
